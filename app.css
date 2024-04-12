@@ -1,0 +1,191 @@
+/*Import Montserrat*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* CSS RESET */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* END CSS RESET */
+
+/* CUSTOM STYLES*/
+
+:root {
+  /*Colors*/
+  --vlt-blue: #10253f;
+  --dark-gray: #cacaca;
+  --bg-gray: #f5f5f5;
+  --text-dark: #212121;
+  --text-light: #fafafa;
+  /*Font family*/
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+header {
+  background-color: var(--vlt-blue);
+  padding: 1rem 3rem;
+}
+
+.logo-container {
+  width: 120px;
+}
+
+#brochures-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  padding: 3rem;
+}
+
+#filter-container {
+  padding: 3rem 3rem 0 3rem;
+}
+
+#filter {
+  padding: 0.3rem;
+  border-radius: 0.25rem;
+}
+
+.card {
+  background-color: var(--dark-gray);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card > .title {
+  color: var(--text-dark);
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.card > img {
+  aspect-ratio: 2/1;
+  object-fit: cover;
+  width: 100%;
+}
+
+#modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  background-color: hsla(0, 0%, 13%, 0.75);
+  z-index: 999;
+}
+
+#modal > .modal-content {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 90%;
+  padding: 2rem;
+}
+
+#modal-pdf,
+#modal-pdf > object,
+#modal-pdf > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#close-button {
+  cursor: pointer;
+}
+
+.visible {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Your mobile-specific styles here */
+  #brochures-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal > .modal-content {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voltalia Brochures App</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <a href="./index.html"
+            ><img src="img/Logo_Voltalia-White.png" alt="Voltalia logo"
+          /></a>
+        </div>
+      </nav>
+    </header>
+    <section id="filter-container">
+      <label for="filter"></label>
+      <select name="" id="filter">
+        <option value="all">All</option>
+        <option value="corporate">Corporate</option>
+        <option value="epc">Construction</option>
+        <option value="om">O&M</option>
+        <option value="dev">Development</option>
+        <option value="etd">Distribution</option>
+      </select>
+    </section>
+    <section id="brochures-container"></section>
+    <div id="modal">
+      <div class="modal-content">
+        <div class="close">
+          <button id="close-button">
+            <svg
+              viewPort="0 0 12 12"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="2rem"
+              height="2rem"
+            >
+              <line
+                x1="1"
+                y1="11"
+                x2="11"
+                y2="1"
+                stroke="black"
+                stroke-width="2"
+              />
+              <line
+                x1="1"
+                y1="1"
+                x2="11"
+                y2="11"
+                stroke="black"
+                stroke-width="2"
+              />
+            </svg>
+          </button>
+        </div>
+        <div id="modal-pdf"></div>
+      </div>
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

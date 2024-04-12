@@ -1,0 +1,81 @@
+const brochures = [
+  {
+    title: "Corporate presentation",
+    pdf: "Vlt_CorporatePPT.pdf",
+    embed: "",
+    image: "Vlt_CorporatePPT.jpg",
+    tags: ["all", "corporate"],
+  },
+  {
+    title: "Energy Kit",
+    pdf: "Vlt_Energykit_Flyer.pdf",
+    embed: "",
+    image: "Vlt_Energykit_Flyer.jpg",
+    tags: ["all", "etd"],
+  },
+  {
+    title: "Construction Solar Service",
+    pdf: "Vlt_EPC_Brochure.pdf",
+    embed: "",
+    image: "Vlt_EPC_Brochure.jpg",
+    tags: ["all", "epc"],
+  },
+  {
+    title: "Distribution",
+    pdf: "Vlt_ETD_Brochure.pdf",
+    embed: "",
+    image: "Vlt_ETD_Brochure.jpg",
+    tags: ["all", "etd"],
+  },
+  {
+    title: "Hybrid Power Plants",
+    pdf: "Vlt_Hybrid_Brochure.pdf",
+    embed: "",
+    image: "Vlt_Hybrid_Brochure.jpg",
+    tags: ["all", "corporate"],
+  },
+  {
+    title: "O&M Solar Service",
+    pdf: "Vlt_O&M_Solar_Brochure.pdf",
+    embed: "",
+    image: "Vlt_O&M_Solar_Brochure.jpg",
+    tags: ["all", "om"],
+  },
+  {
+    title: "Portfolio 2023",
+    pdf: "Vlt_Portfolio_2023.pdf",
+    embed: "",
+    image: "Vlt_Portfolio_2023.jpg",
+    tags: ["all", "corporate", "epc", "om", "dev"],
+  },
+  {
+    title: "PV Secondhand Activity",
+    pdf: "Vlt_PV2A_Brochure.pdf",
+    embed: "",
+    image: "Vlt_PV2A_Brochure.jpg",
+    tags: ["all", "om"],
+  },
+  {
+    title: "Renewable Energy to Power your Business",
+    pdf: "Vlt_REtoPowerYourBusiness_Brochure.pdf",
+    embed: "",
+    image: "Vlt_REtoPowerYourBusiness_Brochure.jpg",
+    tags: ["all", "corporate"],
+  },
+  {
+    title: "Revamping - O&M Service",
+    pdf: "Vlt_Revamping_Brochure.pdf",
+    embed: "",
+    image: "Vlt_Revamping_Brochure.jpg",
+    tags: ["all", "om"],
+  },
+  {
+    title: "The Essential 2022",
+    pdf: "Vlt_The_Essential.pdf",
+    embed: "",
+    image: "Vlt_The_Essential.jpg",
+    tags: ["all", "corporate"],
+  },
+];
+
+export default brochures;
